@@ -4,9 +4,30 @@
   <attributes/>
   <visualElements>
     <visualElement>
-      <elementName>External</elementName>
-      <elementAttributes/>
-      <pos x="680" y="440"/>
+      <elementName>ExternalFile</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>adder_8bit</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>a:8,b:8,cin</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>sum:8,cout</string>
+        </entry>
+        <entry>
+          <string>CodeFile</string>
+          <file>/home/kaldwin/Development/Projects/the_electronics_project_misc/src/adder_8bit.v</file>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="400"/>
     </visualElement>
   </visualElements>
   <wires/>
