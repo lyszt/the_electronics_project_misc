@@ -65,12 +65,12 @@
       <elementName>ExternalFile</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>program_counter</string>
-        </entry>
-        <entry>
           <string>applicationType</string>
           <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>program_counter</string>
         </entry>
         <entry>
           <string>externalInputs</string>
@@ -111,26 +111,123 @@
       </elementAttributes>
       <pos x="1200" y="20"/>
     </visualElement>
+    <visualElement>
+      <elementName>ExternalFile</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>and_8_1_bits</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>clk,reset,bit_8:8,bit_1</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>data_out</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>9</int>
+        </entry>
+        <entry>
+          <string>CodeFile</string>
+          <file>/home/kaldwin/Development/Projects/the_electronics_project_misc/src/and_8_1_bits.v</file>
+        </entry>
+      </elementAttributes>
+      <pos x="900" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Power on</string>
+        </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ExternalFile</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>do_once</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>clk,data_in,reset</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>ocurred,data_out</string>
+        </entry>
+        <entry>
+          <string>Width</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>CodeFile</string>
+          <file>/home/kaldwin/Development/Projects/the_electronics_project_misc/src/do_once.v</file>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="360" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Writing instruction (temporary)</string>
+        </entry>
+      </elementAttributes>
+      <pos x="340" y="220"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="960" y="0"/>
+      <p1 x="1040" y="0"/>
       <p2 x="1060" y="0"/>
     </wire>
     <wire>
-      <p1 x="940" y="-20"/>
-      <p2 x="1060" y="-20"/>
+      <p1 x="240" y="0"/>
+      <p2 x="380" y="0"/>
     </wire>
     <wire>
-      <p1 x="1120" y="20"/>
-      <p2 x="1200" y="20"/>
+      <p1 x="520" y="0"/>
+      <p2 x="580" y="0"/>
     </wire>
     <wire>
-      <p1 x="600" y="20"/>
-      <p2 x="680" y="20"/>
+      <p1 x="580" y="160"/>
+      <p2 x="900" y="160"/>
     </wire>
     <wire>
       <p1 x="360" y="100"/>
+      <p2 x="560" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="1040" y="100"/>
+      <p2 x="1100" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="560" y="100"/>
       <p2 x="880" y="100"/>
     </wire>
     <wire>
@@ -150,6 +247,38 @@
       <p2 x="1060" y="40"/>
     </wire>
     <wire>
+      <p1 x="560" y="200"/>
+      <p2 x="900" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="140"/>
+      <p2 x="900" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="940" y="-20"/>
+      <p2 x="1060" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="-20"/>
+      <p2 x="380" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="1120" y="20"/>
+      <p2 x="1200" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="20"/>
+      <p2 x="680" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="20"/>
+      <p2 x="380" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="180"/>
+      <p2 x="1100" y="180"/>
+    </wire>
+    <wire>
       <p1 x="600" y="-60"/>
       <p2 x="940" y="-60"/>
     </wire>
@@ -162,16 +291,48 @@
       <p2 x="1060" y="60"/>
     </wire>
     <wire>
+      <p1 x="340" y="220"/>
+      <p2 x="900" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="-160"/>
+      <p2 x="600" y="-160"/>
+    </wire>
+    <wire>
       <p1 x="880" y="60"/>
       <p2 x="880" y="100"/>
     </wire>
     <wire>
+      <p1 x="1040" y="0"/>
+      <p2 x="1040" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="560" y="100"/>
+      <p2 x="560" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="0"/>
+      <p2 x="580" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="-160"/>
+      <p2 x="340" y="-20"/>
+    </wire>
+    <wire>
       <p1 x="600" y="-200"/>
+      <p2 x="600" y="-160"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="-160"/>
       <p2 x="600" y="-60"/>
     </wire>
     <wire>
       <p1 x="600" y="-60"/>
       <p2 x="600" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="20"/>
+      <p2 x="600" y="140"/>
     </wire>
     <wire>
       <p1 x="920" y="-40"/>
@@ -184,6 +345,10 @@
     <wire>
       <p1 x="940" y="-60"/>
       <p2 x="940" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="100"/>
+      <p2 x="1100" y="180"/>
     </wire>
   </wires>
   <measurementOrdering/>
