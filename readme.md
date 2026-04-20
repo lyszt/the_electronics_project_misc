@@ -15,14 +15,14 @@ SAP-1 — Simple as Possible Computer (reference): https://karenok.github.io/SAP
 
 ```
 arduino/      Physical hardware experiments on Arduino
-processor/    Verilog modules — building blocks of the SAP-1 processor
+processor/    Verilog modules — digital logic experiments
 ```
 
 ---
 
 ## Processor (Verilog)
 
-Built and simulated using [Digital](https://github.com/hneemann/Digital). Each module is a component of the SAP-1 architecture. The full schematic lives in `main.dig`.
+Built and simulated using [Digital](https://github.com/hneemann/Digital). The full schematic lives in `main.dig`.
 
 | Module | File | Description |
 |--------|------|-------------|
@@ -37,8 +37,6 @@ Built and simulated using [Digital](https://github.com/hneemann/Digital). Each m
 ---
 
 ## Arduino Sketches
-
-Warm-up experiments on real hardware. Build confidence before committing to building a CPU.
 
 ### 1. The off-on device (completely useless)
 
@@ -58,8 +56,8 @@ https://github.com/user-attachments/assets/84a58edd-f701-44ae-ba21-e87acdc27f96
 
 ### 2. Button test
 
-Drives a pin HIGH to verify a button circuit is wired correctly. Strictly a sanity check before connecting anything worth breaking.
+Sets a pin HIGH. That's it.
 
 ### 3. Read test
 
-Reads a digital pin and streams the value to serial at 9600 baud. First contact with digital input reading in this setup.
+Reads a pin and prints the value to serial. Basic intro stuff.
